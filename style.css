@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Indie+Flower&family=Mulish:wght@300&display=swap');
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: bisque;
+}
+.main{
+    background-color: antiquewhite;
+    border: 1px solid white;
+    height: 100vh;
+    width: 50%;
+    max-width: 800px;
+    min-width: 480px;
+    margin: 0 auto;
+}
+.carousel{
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+.carousel .img_carousel{
+    margin-top: 15px;
+    display: none;
+}
+.img_carousel_visible{
+    display: block !important; 
+    animation: fadeVisibility 0.5s;
+}
+.carousel_actions{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.carousel .carousel_actions button{
+    border-radius: 50px;
+    border: 0.5 solid white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    color: #FFF;
+    background-color: #242424;
+}
+.carousel .carousel_actions button[data-js="carousel_button_prev"]{
+    margin-left: 80px;
+}
+.carousel .carousel_actions button[data-js="carousel_button_next"]{
+    margin-right: 80px;
+}
+@keyframes fadeVisibility{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: opacity linear;
+    }
+}
+.p_carousel{
+    display: none;
+}
+.p_carousel_visible{
+    display: block !important;
+}
+h2{
+    font-family: 'Anton', sans-serif;
+    font-size: 25px;
+    position: relative;
+    left: 80px;
+}
+p{  
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+    width: 80%;
+    position: relative;
+    margin: auto auto;
+}
+h1{
+    font-family: 'Indie Flower', cursive;
+    font-size: 50px;
+    margin: auto auto;
+}
+header{
+    width: 50%;
+    max-width: 800px;
+    min-width: 480px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-bottom: none;
+    
+}
